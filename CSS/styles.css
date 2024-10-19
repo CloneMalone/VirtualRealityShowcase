@@ -1,0 +1,460 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, div, img, ul, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Box sizing default */
+* {
+    box-sizing: border-box;
+}
+
+/* Start CSS for content */
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+    font-weight: 300;
+    color: #fff;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.vr-history-section a {
+    color:#32F8FF;
+    text-decoration: underline;
+}
+
+/* Mobile viewport */
+
+.history-of-vr h1 {
+    color: #fff;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+.vrshowcase-section-grid {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1.5em;
+    border: solid 1px white;
+    border-radius: 8px;
+    width: 95%;
+    margin: 0 auto 3em auto;
+    
+}
+
+.vrshowcase-section-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.vrshowcase-section-grid h2 {
+    margin-bottom: 1em;
+}
+
+.vrshowcase-section-grid a {
+    background: linear-gradient(135deg, #32F8FF, #00AEEF);
+    margin: 2% 0;
+    border: none;
+    color: #fff;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 9px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition-duration: 0.3s;
+    display: inline-block;
+}
+
+.vrshowcase-section-grid a:active {
+    background-color: #424242;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    background: linear-gradient(to right, #000428, #004e92);
+    background-color: #202124;
+}
+
+header {
+    margin-top: 7%;
+}
+
+header a {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    text-align: center;
+    font-size: .8em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Nav style */
+nav {
+    padding: 2%;
+    margin-top: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    background-color: rgba(255, 57, 50, 0.3);
+    margin-top: 2%;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    font-weight: bold;
+    color: #32f8ff;
+    padding: .5em 1em;
+}
+
+/* Hero Image */
+#hero-img {
+    max-width: 100%;
+}
+
+/* Main */
+main {
+    text-align: center;
+    margin-top: 3%;
+    padding: 2%;
+}
+
+main h2, main p {
+    color: #fff;
+}
+
+#main-graphic {
+    max-width: 20%;
+}
+
+#learn-more-button {
+    background: linear-gradient(135deg, #32F8FF, #00AEEF);
+    margin: 2% 0;
+    border: none;
+    color: #fff;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition-duration: 0.3s;
+    display: inline-block;
+}
+
+#learn-more-button:active {
+    background-color: #424242;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.vr-history-section {
+    margin: 10% auto;
+    width: 80%;
+    border-radius: 8px;
+    padding: 5%;
+    border: solid 1px #fff;
+    box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+}
+
+.vr-history-section img {
+    width: 80%;
+    margin-top: 5%;
+    border-radius: 8px;
+}
+
+
+/* Footer content */
+footer {
+    padding: .3em;
+    background: linear-gradient(to right, #000428, #01325c);
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Tablet viewport */
+@media screen and (min-width: 750px) {
+    /* Show tablet class, hide mobile class */
+    .tablet {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* Header */
+    header a {
+        font-size: .9em;
+    }
+
+    /* h2 and p */
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    /* Nav */
+
+    nav li {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    nav li a {
+        font-size: .9em;
+        border-radius: 8px;
+    }
+
+    /* Frame */
+    .frame {
+        position: relative;
+        width: 100%;
+    }
+    
+    .frame img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #figure-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2%;
+    }
+
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /* VR History */
+    .vr-history-section {
+        margin: 10% auto;
+        width: 80%;
+        border-radius: 8px;
+        padding: 5%;
+        border: solid 1px #fff;
+        box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+    }
+    
+    .vr-history-section img {
+        width: 80%;
+        margin-top: 5%;
+        border-radius: 8px;
+    }
+
+    .vr-history-section h2 {
+        font-size: 1.5em;
+    }
+
+    .vr-history-section p {
+        font-size: 1em;
+    }
+
+    .history-of-vr-tablet-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item-1 {
+        grid-column: 1 / span 2;
+    }
+
+
+
+}
+
+
+/* Desktop Viewport */
+@media screen and (min-width: 1020px) {
+    /* Hide tablet and mobile class. Show desktop class */
+    .desktop {
+        display: block;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Header h1 */
+    header h1 {
+        transition-duration: .3s;
+    }
+
+    header h1:hover {
+        text-shadow: 0px 0px 17px #32F8FF;
+    }
+
+    /* h1, h2, p */
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .heading-text-effect {
+        text-shadow: 0px 0px 17px #32F8FF;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    /* Nav */
+    nav li {
+        display: inline-block;
+        padding: 0 1em 0 1em;
+        background-color: transparent;
+    }
+
+    nav li a {
+        transition-duration: .3s;
+    }
+
+    nav li a:hover {
+        background-color: #32F8FF;
+        color: black;
+    }
+
+    /* Sections/Grid */
+    .desktop-sections-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5%;
+        align-items: center;
+    }
+
+    .desktop-sections-grid:nth-of-type(2) {
+        margin-top: 18%;
+    }
+
+    .desktop-sections-grid:nth-of-type(3) {
+        margin-top: 20%;
+    }
+
+    .desktop-sections-grid:nth-of-type(4) {
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .desktop-sections-grid img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 8px 38px 0px rgba(0,0,0,0.75);
+    }
+
+    /* Section Buttons */
+    .section-buttons {
+        background: linear-gradient(135deg, #32F8FF, #00AEEF);
+        border: none;
+        color: #fff;
+        padding: 0.8em 2em;
+        font-size: 1.2em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 50px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        transition-duration: 0.3s;
+        display: inline-block;
+    }
+    
+    .section-buttons:hover {
+        background: linear-gradient(135deg, #00AEEF, #32F8FF);
+        transform: scale(1.05);
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* VR History */
+    .history-of-vr-desktop-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item-1 {
+        grid-column: 1 / span 3;
+    }
+
+
+}
+
+
+/* Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+
+    }
+  
+}
+
+
+
